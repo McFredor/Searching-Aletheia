@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+    display: grid;
     width: 80%;
     align-items: center;
     margin-left: 10%;
@@ -43,6 +44,8 @@ body {
 header {
     vertical-align: middle;
     width: 100%;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid #888;
 }
 
 header span {
@@ -66,12 +69,49 @@ button {
     border: 2px solid white;
     border-radius: 50px;
     padding: 8px;
-    margin: 0 0 0 auto;
+    margin: 5px 0 0 auto;
+    float: right;
+    
     
 }
 
 button a {
     color: white;
     text-decoration: none;
+    margin: 0 10px 0 5px;
+    font-family: 'URW Geometric';
+    font-weight: normal;
+    font-size: 1em;
 }
 
+.arrow-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    margin: 4px;
+    transform: rotate(45deg);    
+}
+
+.arrow-icon::before {
+    content: "";
+    box-sizing: border-box;
+    right: 0;
+    top: -2px;
+    position: absolute;
+    height: 2px;
+    box-shadow: inset 0 0 0 32px;
+    transform: rotate(-45deg);
+    width: 20px;
+    transform-origin: right top;
+}
+
+.arrow-icon::after {
+    content: "";
+    box-sizing: border-box;
+}
