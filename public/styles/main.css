@@ -1,0 +1,77 @@
+/* First import my fonts */
+@font-face {
+    font-family: 'Mustica Pro';
+    font-weight: bold;
+    src: url(./fonts/MUSTICAPRO-SEMIBOLD.OTF);
+}
+@font-face {
+    font-family: Kepler;
+    font-weight: lighter;
+    src: url(./fonts/KEPLERSTD-LIGHTIT.OTF);
+}
+@font-face {
+    font-family: 'URW Geometric';
+    font-weight: 800;
+    src: url(./fonts/URWGEOMETRIC-HEAVY.TTF);
+}
+@font-face {
+    font-family: 'URW Geometric';
+    font-weight: normal;
+    src: url(./fonts/URWGEOMETRIC-REGULAR.TTF);
+}
+
+
+
+/* And do styled */
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.icon {
+    height: 3em;
+    vertical-align: middle;
+}
+
+header {
+    vertical-align: middle;
+    width: 100%;
+}
+
+header span {
+    color: #888;
+    font-size: 2em;
+    vertical-align: middle;
+    margin: 0 0px 0 6px;
+    font-family: 'Mustica Pro';
+}
+
+
+h1 {
+    display: inline;
+    vertical-align: middle;
+    font-family: 'URW Geometric';
+    font-weight: normal;
+}
+
+button {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 8px;
+    margin: 0 0 0 auto;
+    
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
